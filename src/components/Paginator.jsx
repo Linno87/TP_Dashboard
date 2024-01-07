@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 
 export const Paginator = ({ pagination , apiCall }) => {
   return (
+    <div className="d-flex justify-content-end">
       <nav aria-label="Page navigation example">
         <ul className="pagination">
           <li className="page-item" hidden={pagination.currentPage=== 1}>
@@ -26,7 +27,7 @@ export const Paginator = ({ pagination , apiCall }) => {
           </li>
         </ul>
       </nav>
-    
+    </div>
   );
 };
 

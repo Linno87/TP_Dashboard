@@ -33,7 +33,7 @@ export const MoviesListPage = () => {
         <Card>
           <Card.Body>
             <div className="d-flex justify-content-between">
-              <FormSearchMovie />
+              <FormSearchMovie apiCall={apiCall}/>
               <Paginator pagination={pagination} apiCall={apiCall} />
             </div>
             <Table striped>
