@@ -26,10 +26,12 @@ const data = [
 
 export const ContentRowMovies = () => {
   return (
-    <div className="row">
+    <div className="col-12">
+    <div className="row ">
       {data.map(({color, title, value,icon, id}) => (
         <ContentRowItemMovies key={id} color={color} title={title} value={value} icon={icon} />
       ))}
+    </div>
     </div>
   );
 };
